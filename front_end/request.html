@@ -1,0 +1,19 @@
+<script>
+
+   const getUsers = async()=>{
+       const response = await fetch('http://localhost:4700/users',{
+        method:'GET',
+        headers:{
+            'Content-Type': 'application/json',
+            'Authorization':''
+
+        }     
+       })
+
+   const users = await response.json
+   alert(users)
+   }
+   getUsers().then(()=>{
+       console.log('I am done')
+   })
+</script>

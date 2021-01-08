@@ -1,0 +1,4 @@
+exports.sayHello =()=>{
+  // alert('welcome')
+
+}
