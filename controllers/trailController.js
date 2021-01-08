@@ -1,4 +1,3 @@
-var connection = require('../../test/models/db')
 
 connection = require('../models/db')
 
