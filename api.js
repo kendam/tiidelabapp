@@ -1,5 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser')
+require("dotenv").config()
+
 var cors = require('cors')
 
 var users = require('./controllers/userController')
@@ -17,5 +19,5 @@ app.use(bodyParser(),cors(corsOptions))
 /** Instantialte Controllers */
 users(app)
 feedback(app)
- app.listen(4700)
+ app.listen(process.env.PORT||4700)
  console.log('listening at port 4700')
